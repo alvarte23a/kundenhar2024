@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFam Produkter!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 10% 10% auto auto 5%;
+            grid-template-columns: repeat(3, 1fr);
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-item {
+            border: 1px solid #ddd; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            border: none; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .header:hover {
+            color: aqua;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 70%; 
+            max-height: 70%; 
+            object-fit: contain; 
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        h5 {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+            text-align: center;
+        }
+
+        @media (max-width: 768hpx) {
+            body {
+                grid-template-rows: 15% 15% auto auto auto;
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h5 {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+        <h1>Produkter</h1>
+    </div>
+    <div class="grid-item"></div>
+    <div class="header">
+        <h3>Personal</h3>
+    </div>
+    <div class="header">
+        <h3>Kontakt</h3>
+    </div>
+    <div class="header">
+        <h3>Om oss</h3>
+    </div>
+    <div class="grid-item">
+        <img src="img/pwo.png" alt="Preworkout">
+    </div>
+    <div class="grid-item">
+        <img src="https://i5.walmartimages.com/seo/VIBESPARK-Adjustable-Weight-Bench-600lbs-5-in-1-Foldable-Workout-Set-Barbell-Rack-Leg-Developer-Preacher-Curl-Dumbbell-Fly-Attachment-Multi-Function_c5ba3768-2e96-4a88-8021-3c574f4e3431.a2bdffb9b409c71e019a337fd34c5f9f.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Gymbänk">
+    </div>
+    <div class="grid-item">
+        <img src="https://cdn.shopify.com/s/files/1/1367/5209/files/ShakerBottle-GSCoreBlue-I1A4T-UB9J-0033_c37bd9b8-055b-4962-bde1-bc0f7719c1ee.jpg?v=1690107755" alt="Vattenflaska">
+    </div>
+    <div class="grid-item">
+        <h5>
+            Preworkout - Maxa Din Träning! <br>
+            Upptäck kraften med världens bästa preworkout, exklusivt hos Världens Bästa Workout Hemsida! Vår premium preworkout är designad för att ge dig explosiv energi, laserfokus och förbättrad uthållighet under varje träningspass.
+        </h5>
+    </div>
+    <div class="grid-item">
+        <h5>
+            Gymbänk - Din Allround-Träningspartner <br>
+            Maximera dina träningsmöjligheter med vår robusta och mångsidiga gymbänk, perfekt för allt från bänkpress till step-ups.
+        </h5>
+    </div>
+    <div class="grid-item">
+        <h5>
+            Vattenflaska - Håll Dig Hydrerad <br>
+            Håll energin uppe och prestandan på topp med vår stilrena och funktionella vattenflaska. Perfekt för gymmet eller på språng.
+        </h5>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+</body>
+</html>
